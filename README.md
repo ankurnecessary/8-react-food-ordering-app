@@ -62,6 +62,7 @@ Working with:
 50. We can also use the ``FormData()` browser API to handle the form.
 51. You can reset a `<form>` using `form.reset()` function over it.
 52. You can also reset the form using `<button type="reset" >Reset</button>`.
+53. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
