@@ -23,7 +23,7 @@ Working with:
 13. createPortal()
 14. createContext()
 15. useContext()
-16. `useContext()` should be used when a particular data needs access on multiple pages or UIs of the application.
+16. `useContext()` should be used when a particular data is needed on multiple pages or UIs of the application.
 17. useReducer()
 18. <React.StrictMode>
 19. Children prop
