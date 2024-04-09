@@ -28,7 +28,7 @@ module.exports = {
 		'react',
 	],
 	rules: {
-		'linebreak-style': ['error', 'unix'], // To change the line break style preference from LF to CRLF
+		'linebreak-style': ['error', 'windows'], // To change the line break style preference from LF to CRLF
 		'no-unused-vars': 'warn', // To highlight declared but unused variables
 		'no-undef': 'error', // To highlight the usage of undeclared variables
 	},
