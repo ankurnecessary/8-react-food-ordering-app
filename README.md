@@ -97,4 +97,3 @@ const data = Object.fromEntries(fd.entries());
 data.acquisitionChannel = acquisitionChannel;
 console.log(data);
 ```
-
