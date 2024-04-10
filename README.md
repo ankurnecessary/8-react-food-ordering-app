@@ -98,3 +98,10 @@ data.acquisitionChannel = acquisitionChannel;
 console.log(data);
 ```
 
+If you don't want a parameter's value to be undefined, you can define it's default value like so:
+
+```javascript
+function hello(data = '') {
+  // Now data will never be undefined
+}
+```
