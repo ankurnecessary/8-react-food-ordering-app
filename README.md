@@ -24,15 +24,15 @@ Working with:
 14. createContext()
 15. useContext()
 16. `useContext()` should be used when a particular data is needed on multiple pages or UIs of the application.
-17. useReducer()
-18. An alternative to `useState()`. `useReducer()` is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
-19. <React.StrictMode>
-20. Children prop
-21. Using rest operator while using component tag.
-22. useReducer()
+17. [useContext() with useState()]()
+18. [useContext() with useReducer()](https://github.com/ankurnecessary/8-react-food-ordering-app/blob/main/src/store/CartContext.jsx)
+19. An alternative to `useState()`. `useReducer()` is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
+20. <React.StrictMode>
+21. Children prop
+22. Using rest operator while using component tag.
 23. useEffect() - with blank dependency array will fire only once at the end of first render of the component.
 24. useEffect() - with dependency array will fire on first render of the component and every time value of the variables in dependency array changes.
-25. useEffect() - with a return function inside useEffect() function. The function returned will fire when the related component dismounts. That is why it is also called clean up function.
+25. useEffect() - with a return function inside useEffect() function. The function returned will fire when the related component dismounts. That is why it is also called clean up function. `The clean up function also get fired up whenever useEffect() function is fired i.e. whenever useEffect() function fires up due to change in the value of the variables in dependency array.`
 26. We generally use useEffect() for the asynchronous code which will resolve in future and can change the state of the application.
 27. useEffect()'s dependency array should include useState() variables, useContext() variables and props which are used inside the useEffect()'s first function argument.
 28. useCallback() - Whenever we wrap any function inside the useCallback() it stops getting recreated again and again when a component rerenders, if the dependency array is blank. If not then the function in useCallback() will be recreated when the value of any of the dependency change.
