@@ -27,6 +27,10 @@ export default function useHttp(url, config, initialData) {
     setIsLoading(false);
   }, [url, config]);
 
+  function clearData() {
+    setData(initialData);
+  }
+
   useEffect(() => {
     if ((config && (config.method === 'GET' || !config.method)) || !config) {
       sendRequest();
@@ -38,5 +42,6 @@ export default function useHttp(url, config, initialData) {
     error,
     isLoading,
     sendRequest,
+    clearData,
   };
 }
