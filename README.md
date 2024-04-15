@@ -24,15 +24,15 @@ Working with:
 14. createContext()
 15. useContext()
 16. `useContext()` should be used when a particular data is needed on multiple pages or UIs of the application.
-17. useReducer()
-18. An alternative to `useState()`. `useReducer()` is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
-19. <React.StrictMode>
-20. Children prop
-21. Using rest operator while using component tag.
-22. useReducer()
+17. [useContext() with useState()]()
+18. [useContext() with useReducer()](https://github.com/ankurnecessary/8-react-food-ordering-app/blob/main/src/store/CartContext.jsx)
+19. An alternative to `useState()`. `useReducer()` is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
+20. <React.StrictMode>
+21. Children prop
+22. Using rest operator while using component tag.
 23. useEffect() - with blank dependency array will fire only once at the end of first render of the component.
 24. useEffect() - with dependency array will fire on first render of the component and every time value of the variables in dependency array changes.
-25. useEffect() - with a return function inside useEffect() function. The function returned will fire when the related component dismounts. That is why it is also called clean up function.
+25. useEffect() - with a return function inside useEffect() function. The function returned will fire when the related component dismounts. That is why it is also called clean up function. `The clean up function also get fired up whenever useEffect() function is fired i.e. whenever useEffect() function fires up due to change in the value of the variables in dependency array.`
 26. We generally use useEffect() for the asynchronous code which will resolve in future and can change the state of the application.
 27. useEffect()'s dependency array should include useState() variables, useContext() variables and props which are used inside the useEffect()'s first function argument.
 28. useCallback() - Whenever we wrap any function inside the useCallback() it stops getting recreated again and again when a component rerenders, if the dependency array is blank. If not then the function in useCallback() will be recreated when the value of any of the dependency change.
@@ -59,12 +59,14 @@ Working with:
     2. Only call hooks on top level i.e. directly inside a component function but not in any if block or function inside component function.
 48. [Why custom hook?](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content). Suppose we have created a component and it is being used in multiple places later on. The component needs some data to be passed in through one of it's props. We are fetching this data from different HTTP endpoints at all the places where we have used this component. That means there is some code pattern that is common among all the places where the component is used and re-used. To decrease the code repetition related to the common code pattern we use **custom hooks**.
 49. A custom hook's function name should start with the word 'use' like 'useFetch()' etc.
-50. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
-51. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
-52. We can also use the ``FormData()` browser API to handle the form.
-53. You can reset a `<form>` using `form.reset()` function over it.
-54. You can also reset the form using `<button type="reset" >Reset</button>`.
-55. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+50. [Custom hook video]()
+51. [Custom hook example]()
+52. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
+53. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
+54. We can also use the ``FormData()` browser API to handle the form.
+55. You can reset a `<form>` using `form.reset()` function over it.
+56. You can also reset the form using `<button type="reset" >Reset</button>`.
+57. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
@@ -105,3 +107,5 @@ function hello(data = '') {
   // Now data will never be undefined
 }
 ```
+
+[React Folder structure](https://www.youtube.com/watch?v=UUga4-z7b6s)
