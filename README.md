@@ -59,12 +59,14 @@ Working with:
     2. Only call hooks on top level i.e. directly inside a component function but not in any if block or function inside component function.
 48. [Why custom hook?](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content). Suppose we have created a component and it is being used in multiple places later on. The component needs some data to be passed in through one of it's props. We are fetching this data from different HTTP endpoints at all the places where we have used this component. That means there is some code pattern that is common among all the places where the component is used and re-used. To decrease the code repetition related to the common code pattern we use **custom hooks**.
 49. A custom hook's function name should start with the word 'use' like 'useFetch()' etc.
-50. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
-51. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
-52. We can also use the ``FormData()` browser API to handle the form.
-53. You can reset a `<form>` using `form.reset()` function over it.
-54. You can also reset the form using `<button type="reset" >Reset</button>`.
-55. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+50. [Custom hook video]()
+51. [Custom hook example]()
+52. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
+53. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
+54. We can also use the ``FormData()` browser API to handle the form.
+55. You can reset a `<form>` using `form.reset()` function over it.
+56. You can also reset the form using `<button type="reset" >Reset</button>`.
+57. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
