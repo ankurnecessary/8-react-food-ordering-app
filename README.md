@@ -105,3 +105,5 @@ function hello(data = '') {
   // Now data will never be undefined
 }
 ```
+
+[React Folder structure](https://www.youtube.com/watch?v=UUga4-z7b6s)
