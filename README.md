@@ -44,29 +44,30 @@ Working with:
 34. We as a developer cannot consume **key** prop. It is exclusively for the react.
 35. Using **key** attribute and it's value as the array index in repeating element in the JSX is a bad idea. Instead we should use id in the array elements as the value of the **key** attribute. It increases performance and remove functionality issues.
 36. Using **key** attribute in the component tag is another pattern that could help us in re-initializing the component. So, it is like reloading a component with new prop values instead of using useEffect() to do so. It is like using a component afresh.
-37. Why use PropTypes instead of TypeScript? Answer: type-checking props using TypeScript can only be effective when the prop's value is hardcoded. Even though you claim that the data from the API is a number, you won't get any errors when the data is a string. Since type-checking is done during runtime, PropTypes is a better tool for unknown data.
-38. React query is a good plugin for HTTP calls via react application. AJAX
-39. Whenever a component rerenders because of state function being called, it's child components are also rerendered.
-40. [React.memo](https://docs.google.com/document/d/1IKjPhw6a3TPKvmeJ9743PljP6ci7UkbkgNa3sQwVRWs/edit#heading=h.raq8jq8e7749)
-41. We can use React.memo() with useCallback() too.
-42. [useMemo()](https://docs.google.com/document/d/1IKjPhw6a3TPKvmeJ9743PljP6ci7UkbkgNa3sQwVRWs/edit#heading=h.cf9uscl5y5c8)
-43. If we have multiple state functions being fired at once, may be within a function, then that doesn't mean that our component will also get rerendered multiple times (once for each state function call). Instead it will render only once.
-44. We can use [millionjs](https://million.dev/) to increase the speed and performance of our react project. It works on state changing and checking algorithm.
-45. A library like gotbootstrap.com in react is [Material Tailwind](https://www.material-tailwind.com/docs/react/accordion).
-46. Next.js or Remix
-47. General rules of using hooks.
+37. [Key lecture](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/40270596#questions)
+38. Why use PropTypes instead of TypeScript? Answer: type-checking props using TypeScript can only be effective when the prop's value is hardcoded. Even though you claim that the data from the API is a number, you won't get any errors when the data is a string. Since type-checking is done during runtime, PropTypes is a better tool for unknown data.
+39. React query is a good plugin for HTTP calls via react application. AJAX
+40. Whenever a component rerenders because of state function being called, it's child components are also rerendered.
+41. [React.memo](https://docs.google.com/document/d/1IKjPhw6a3TPKvmeJ9743PljP6ci7UkbkgNa3sQwVRWs/edit#heading=h.raq8jq8e7749)
+42. We can use React.memo() with useCallback() too.
+43. [useMemo()](https://docs.google.com/document/d/1IKjPhw6a3TPKvmeJ9743PljP6ci7UkbkgNa3sQwVRWs/edit#heading=h.cf9uscl5y5c8)
+44. If we have multiple state functions being fired at once, may be within a function, then that doesn't mean that our component will also get rerendered multiple times (once for each state function call). Instead it will render only once.
+45. We can use [millionjs](https://million.dev/) to increase the speed and performance of our react project. It works on state changing and checking algorithm.
+46. A library like gotbootstrap.com in react is [Material Tailwind](https://www.material-tailwind.com/docs/react/accordion).
+47. Next.js or Remix
+48. General rules of using hooks.
     1. Only call Hooks in Component or Other custom hook function.
     2. Only call hooks on top level i.e. directly inside a component function but not in any if block or function inside component function.
-48. [Why custom hook?](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content). Suppose we have created a component and it is being used in multiple places later on. The component needs some data to be passed in through one of it's props. We are fetching this data from different HTTP endpoints at all the places where we have used this component. That means there is some code pattern that is common among all the places where the component is used and re-used. To decrease the code repetition related to the common code pattern we use **custom hooks**.
-49. A custom hook's function name should start with the word 'use' like 'useFetch()' etc.
-50. [Custom hook video](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8244694#questions)
-51. [Custom hook example](https://github.com/ankurnecessary/8-react-food-ordering-app/blob/main/src/hooks/useHttp.js)
-52. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
-53. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
-54. We can also use the ``FormData()` browser API to handle the form.
-55. You can reset a `<form>` using `form.reset()` function over it.
-56. You can also reset the form using `<button type="reset" >Reset</button>`.
-57. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+49. [Why custom hook?](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content). Suppose we have created a component and it is being used in multiple places later on. The component needs some data to be passed in through one of it's props. We are fetching this data from different HTTP endpoints at all the places where we have used this component. That means there is some code pattern that is common among all the places where the component is used and re-used. To decrease the code repetition related to the common code pattern we use **custom hooks**.
+50. A custom hook's function name should start with the word 'use' like 'useFetch()' etc.
+51. [Custom hook video](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8244694#questions)
+52. [Custom hook example](https://github.com/ankurnecessary/8-react-food-ordering-app/blob/main/src/hooks/useHttp.js)
+53. Using `useState()` to handle the `<form>`s is a bad idea because it will lead to lot of code.
+54. Using `useRef()` is also a bad idea to handle a `<form>` because resetting a `<form>` using useRef() is discouraged. Lot of code eventually.
+55. We can also use the ``FormData()` browser API to handle the form.
+56. You can reset a `<form>` using `form.reset()` function over it.
+57. You can also reset the form using `<button type="reset" >Reset</button>`.
+58. [Formatting currency](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
